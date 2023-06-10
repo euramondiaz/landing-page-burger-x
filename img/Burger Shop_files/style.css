@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    border: none;
+    text-decoration: none;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+html {
+    width: 100vw;
+    height: 100vh;
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+/* Menu */
+
+.content {
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #2D2D2E;
+    position: fixed;
+    padding-left: 30rem;
+    filter: drop-shadow(1px 1px 4px rgba(0, 0, 0, 50));
+    z-index: 100;
+    transition: transform 0.3s ease;
+}
+
+.content:hover {
+    transform: scale(1.05);
+}
+
+.logo {
+    width: 70px;
+    height: auto;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 20));
+}
+
+.logo h3 {
+    color: #F59F48;
+    font-size: 1.6rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 10);
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.content .list-menu {
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 50));
+}
+
+.content .list-menu li a {
+    padding: 3rem 1rem 2rem 1rem;
+    color: white;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: all 200ms ease-in;
+}
+
+.content .list-menu li a:hover {
+    border-bottom: 3px solid #F59F48;
+    color: #F59F48;
+}
+
+/* Primeira seção */
+
+.first-section {
+    height: 100vh;
+    background-image: url(./img/Design\ sem\ nome.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-section .conteudo-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.first-section h1 {
+    color: #F59F48;
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 200);
+    -webkit-text-stroke: 0.8px #000000;
+    text-stroke: 0.8px #000;
+}
+
+.first-section h2 {
+    color: rgb(177, 177, 177);
+    font-size: 3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 200);
+}
+
+.btn button {
+    width: 230px;
+    height: 60px;
+    cursor: pointer;
+    background-color: #F59F48;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 100));
+    border-radius: 10px;
+    color: black;
+    font-weight: 700;
+    margin-top: 5rem;
+    transition: transform 500ms ease;
+}
+
+.btn button:hover {
+    transform: scale(1.1);
+    border: 1px solid #F59F48;
+    background-color: transparent;
+    color: #F59F48;
+}
+
+.btn {
+    width: 480px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Sobre nós */
+
+.sobre-nos {
+    background: radial-gradient(circle, black, #585858);
+    width: 100%;
+    padding-bottom: 5rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre-nos img {
+    width: 400px;
+    height: 400px;
+    margin-top: 10rem;
+    margin-left: 3.5rem;
+    margin-right: 15rem;
+    border: 4px solid rgb(155, 155, 155);
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 50));
+    animation: floating 5s infinite ease-in-out;
+    border-radius: 50px;
+}
+
+@keyframes floating {
+    0% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(10px, 10px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contentsobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contentsobre h2 {
+    font-size: 6rem;
+    margin-bottom: 1rem;
+    margin-left: 15rem;
+}
+
+.contentsobre p {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-left: 15rem;
+    width: 600px;
+}
+
+/* Cardápio */
+
+.cardapio {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.cardapio h2 {
+    font-size: 5rem;
+    color: #F59F48;
+    text-transform: uppercase;
+    -webkit-text-stroke: 2.0px #000000;
+    text-stroke: 2.0px #000;
+}
+
+.itens-cardapio {
+    width: 90%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 300px));
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.itens-cardapio .info {
+    background-color: antiquewhite;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+}
+
+.itens-cardapio .info h3 {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    text-decoration: underline;
+}
+
+.itens-cardapio .info h4 {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    margin-bottom: 0.6rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 150px 150px;
+    margin-left: 6rem;
+}
+
+.itens-cardapio .info h4 span {
+    font-size: 1.6rem;
+    color: #585858;
+    margin-left: 1.5rem;
+    text-decoration: underline;
+}
+
+.itens-cardapio div {
+    background-color: #F59F48;
+    box-shadow: 0px 0px 4px 1px;
+}
+
+.itens-cardapio img {
+    width: 100%;
+    height: 200px;
+}
+
+.itens-cardapio .info .pedir {
+    width: 200px;
+    height: 35px;
+    margin-top: 0.5rem;
+    background-color: green;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: hsl(0, 0%, 100%);
+    transition: all 200ms ease-in;
+}
+
+.itens-cardapio .info .pedir:hover {
+    background-color: #585858;
+    color: white;
+    transform: scale(1.1);
+}
+
+/* Contatos */
+
+.contatos {
+    width: 100%;
+    background: radial-gradient(circle, black, #585858);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    color: white;
+    padding-bottom: 4rem;
+}
+
+.contatos h3 {
+    font-size: 3.5rem;
+    margin-bottom: 3rem;
+}
+
+.contatos-secao {
+    width: 650px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+}
+
+.contatos-secao i {
+    margin-right: 1rem;
+}
+
+.contatos-secao div {
+    cursor: pointer;
+    transition: all 200ms ease-in;
+}
+
+.contatos-secao div:hover {
+    color: #F59F48;
+}
+
+footer {
+    height: 25px;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+}
+
+@media (max-width: 1200px) {
+    .main {
+        display: block;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 12%;
+        padding-left: 0px;
+    }
+
+    .img-burger {
+        width: 80%;
+        max-width: 600px;
+        height: auto;
+        margin: 5rem auto;
+        margin-bottom: 3.5rem;
+    }
+
+    .contentsobre h2,
+    .contentsobre p {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .itens-cardapio {
+        width: 80%;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        padding: 0 1rem;
+    }
+
+    .itens-cardapio .info h4 {
+        margin-left: 0;
+    }
+
+    .contatos-secao {
+        width: 80%;
+    }
+}
+
+@media (max-width: 992px) {
+
+
+}
+
+
+
+
+
