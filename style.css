@@ -27,7 +27,7 @@ html {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #2D2D2E;
+    background-color: #00000063;
     position: fixed;
     padding-left: 30rem;
     filter: drop-shadow(1px 1px 4px rgba(0, 0, 0, 50));
@@ -627,6 +627,29 @@ footer {
         grid-template-columns: 93px;
     }
 }
+
+@media screen and (max-width: 394px) {
+    .itens-cardapio .info {
+      display: flex;
+      flex-direction: column;
+    }
+    .itens-cardapio .info h4 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 20px;
+      margin-left: 90px;
+      align-items: center;
+    }
+    .itens-cardapio .info h4 span {
+      margin-left: 70px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 80px;
+    }
+  }
+  
 
     
 
