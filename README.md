@@ -1,6 +1,6 @@
 # L0anding-page-burger-x
 projeto front end, landing page usando HTML, CSS E JAVASCRIPT
-[Acesse a deploy do projeto](https://darling-donut-a5f326.netlify.app/)
+[Acesse a deploy do projeto](https://marvelous-begonia-2f32ac.netlify.app/)
 
 ![image](https://harmonious-jelly-fee7c5.netlify.app/)
 
